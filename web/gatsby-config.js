@@ -21,6 +21,7 @@ module.exports = {
         watchMode: !isProd,
         overlayDrafts: !isProd && token
       }
-    }
+    },
+    `gatsby-plugin-styled-components`
   ]
 }
