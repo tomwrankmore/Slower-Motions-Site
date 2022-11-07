@@ -13,6 +13,8 @@ function Project(props) {
   const { _rawBody, title, categories, mainImage, members, publishedAt, relatedProjects } = props;
   return (
     <article className={styles.root}>
+      <Container>
+      <h1 className={styles.title}>{title}</h1>
       {props.mainImage && mainImage.asset && (
         <div className={styles.mainImage}>
           <img
@@ -25,10 +27,8 @@ function Project(props) {
           />
         </div>
       )}
-      <Container>
         <div className={styles.grid}>
           <div className={styles.mainContent}>
-            <h1 className={styles.title}>{title}</h1>
             {_rawBody && <BlockContent blocks={_rawBody || []} />}
           </div>
           <aside className={styles.metaContent}>
