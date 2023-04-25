@@ -10,7 +10,7 @@ const Header = ({ onHideNav, onShowNav, showNav, siteTitle, navLogo }) => (
     <div className={styles.wrapper}>
       <div className={styles.branding}>
       <Link to="/">
-        {navLogo ? <img className={styles.logo} src={navLogo.asset.gatsbyImageData.images.fallback.src} alt="logo" /> : {siteTitle}}
+        {navLogo ? <img className={styles.logo} src={navLogo.asset.gatsbyImageData.images.fallback.src} alt="logo" /> : <h3>{siteTitle}</h3>}
       </Link>
         
       </div>
