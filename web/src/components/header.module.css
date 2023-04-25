@@ -112,3 +112,9 @@
 .showNav {
   display: block;
 }
+
+.logo {
+  max-width: 200px;
+  width: 100%;
+  display: block;
+}
