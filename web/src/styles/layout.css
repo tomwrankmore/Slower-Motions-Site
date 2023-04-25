@@ -23,3 +23,7 @@ body > div,
 body > div > div {
   height: 100%;
 }
+
+a {
+  color: var(--color-black);
+}
