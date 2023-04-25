@@ -9,7 +9,7 @@ import RoleList from "./role-list";
 
 import * as styles from "./project.module.css";
 
-function Project(props) {
+const Interview = (props) => {
   const { _rawBody, title, categories, mainImage, members, publishedAt, relatedProjects } = props;
   return (
     <article className={styles.root}>
@@ -73,4 +73,4 @@ function Project(props) {
   );
 }
 
-export default Project;
+export default Interview;
