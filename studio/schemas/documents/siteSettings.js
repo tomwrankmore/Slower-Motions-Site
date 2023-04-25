@@ -15,6 +15,11 @@ export default {
       title: 'Title'
     },
     {
+      name: 'navLogo',
+      title: 'Navigation logo',
+      type: 'figure'
+    },
+    {
       name: 'description',
       type: 'text',
       title: 'Description',
