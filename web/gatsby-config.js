@@ -22,6 +22,12 @@ module.exports = {
         overlayDrafts: !isProd && token
       }
     },
-    `gatsby-plugin-styled-components`
+    `gatsby-plugin-styled-components`,
+    {
+      resolve: 'gatsby-plugin-manifest',
+      options: {
+        icon: 'src/assets/images/logo.png',
+      },
+    },
   ]
 }
