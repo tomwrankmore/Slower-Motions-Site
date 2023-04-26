@@ -38,6 +38,12 @@
   --color-very-light-gray: #e7ebed;
   --color-white: #fff;
   --color-accent: #2d2e31;
+  --color-dark-green: #20983f;
+  --color-yellow: #f8c532;
+  --color-light-blue: #34c1d4;
+  --color-orange: #f28738;
+  --color-light-green: #98db63;
+  --color-blue: #275ff5;
 
   /* Typography */
   --unit: 16;

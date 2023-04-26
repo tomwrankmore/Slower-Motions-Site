@@ -14,6 +14,13 @@ function Project(props) {
   return (
     <article className={styles.root}>
       <Container>
+      {publishedAt && (
+        <div className={styles.publishedAt}>
+          {differenceInDays(new Date(publishedAt), new Date()) > 3
+            ? formatDistance(new Date(publishedAt), new Date())
+            : format(new Date(publishedAt), "MMMM do yyyy")}
+        </div>
+      )}
       <h1 className={styles.title}>{title}</h1>
       {props.mainImage && mainImage.asset && (
         <div className={styles.mainImage}>
@@ -32,13 +39,13 @@ function Project(props) {
             {_rawBody && <BlockContent blocks={_rawBody || []} />}
           </div>
           <aside className={styles.metaContent}>
-            {publishedAt && (
+            {/* {publishedAt && (
               <div className={styles.publishedAt}>
                 {differenceInDays(new Date(publishedAt), new Date()) > 3
                   ? formatDistance(new Date(publishedAt), new Date())
                   : format(new Date(publishedAt), "MMMM do yyyy")}
               </div>
-            )}
+            )} */}
             {members && members.length > 0 && <RoleList items={members} title="Project members" />}
             {categories && categories.length > 0 && (
               <div className={styles.categories}>

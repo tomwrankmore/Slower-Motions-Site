@@ -9,7 +9,7 @@
 .wrapper {
   box-sizing: border-box;
   margin: 0 auto;
-  max-width: 960px;
+  max-width: 1920px;
   padding: 1em;
   display: flex;
 
@@ -21,6 +21,9 @@
 .branding {
   font-weight: 600;
   flex: 1;
+  @media (--media-min-small) {
+    flex: inherit;
+  }
 
   @nest & a {
     display: inline-block;
@@ -66,13 +69,16 @@
 
   @nest & ul li a {
     display: block;
-    color: inherit;
+    color: var(--color-white);;
     text-decoration: none;
+    text-transform: uppercase;
+    /* font-family: var(--font-family-sans-bold); */
   }
 
   @media (hover: hover) {
     @nest & ul li a:hover {
-      color: var(--color-accent);
+      /* color: var(--color-light-blue); */
+      text-decoration: underline;
     }
   }
 
@@ -96,6 +102,11 @@
 
   @media (--media-min-small) {
     display: block;
+    flex: 1;
+    display: flex;
+    background: var(--color-orange);
+    align-items: center;
+    justify-content: flex-end;
 
     @nest & ul {
       list-style: none;
