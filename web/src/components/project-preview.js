@@ -18,7 +18,8 @@ display: block;
   width: fit-content;
   color: var(--color-white);
   &:hover {
-    background-color: var(--color-yellow);
+    /* background-color: var(--color-yellow); */
+    text-decoration: underline;
   }
 `
 

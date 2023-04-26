@@ -59,7 +59,7 @@
 .micro {
   font-size: var(--font-micro-size);
   line-height: var(--font-micro-line-height);
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
 }
 
 

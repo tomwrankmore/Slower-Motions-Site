@@ -71,8 +71,9 @@
     display: block;
     color: var(--color-white);;
     text-decoration: none;
-    text-transform: uppercase;
+    text-transform: lowercase;
     /* font-family: var(--font-family-sans-bold); */
+    font-size: 0.875rem;
   }
 
   @media (hover: hover) {
