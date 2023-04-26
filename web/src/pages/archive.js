@@ -12,7 +12,6 @@ import { responsiveTitle1 } from "../components/typography.module.css";
 
 const ArchiveTitle = styled.h3` 
   font-size: 1rem;
-  /* text-transform: uppercase; */
   letter-spacing: 0.5px;
   margin: 2rem 0;
 `
