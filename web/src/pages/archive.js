@@ -1,5 +1,6 @@
 import React from "react";
 import { graphql } from "gatsby";
+import styled from "styled-components";
 import Container from "../components/container";
 import GraphQLErrorList from "../components/graphql-error-list";
 import ProjectPreviewGrid from "../components/project-preview-grid";
@@ -8,6 +9,13 @@ import Layout from "../containers/layout";
 import { mapEdgesToNodes, filterOutDocsWithoutSlugs } from "../lib/helpers";
 
 import { responsiveTitle1 } from "../components/typography.module.css";
+
+const ArchiveTitle = styled.h3` 
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin: 2rem 0;
+`
 
 export const query = graphql`
   query ArchivePageQuery {
@@ -50,7 +58,7 @@ const ArchivePage = props => {
     <Layout>
       <SEO title="Archive" />
       <Container>
-        {/* <h1 className={responsiveTitle1}>Projects</h1> */}
+      <ArchiveTitle>All</ArchiveTitle>
         {projectNodes && projectNodes.length > 0 && <ProjectPreviewGrid nodes={projectNodes} />}
       </Container>
     </Layout>

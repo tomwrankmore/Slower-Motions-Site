@@ -1,5 +1,6 @@
 import { Link } from "gatsby";
 import React from "react";
+import styled from "styled-components";
 import { cn, buildImageObj } from "../lib/helpers";
 import { imageUrlFor } from "../lib/image-url";
 import BlockContent from "./block-content";
@@ -7,9 +8,23 @@ import BlockContent from "./block-content";
 import * as styles from "./project-preview.module.css";
 import { responsiveTitle3 } from "./typography.module.css";
 
+const ArticleLink = styled(Link)` 
+display: block;
+  color: inherit;
+  text-decoration: none;
+  background-color: var(--color-light-blue);
+  margin-bottom: 0.5rem;
+  padding: 0.25rem;
+  width: fit-content;
+  color: var(--color-white);
+  &:hover {
+    background-color: var(--color-yellow);
+  }
+`
+
 function ProjectPreview(props) {
   return (
-    <Link className={styles.root} to={`/interview/${props.slug.current}`}>
+    <ArticleLink to={`/interview/${props.slug.current}`}>
       {/* <div className={styles.leadMediaThumb}>
         {props.mainImage && props.mainImage.asset && (
           <img
@@ -28,7 +43,7 @@ function ProjectPreview(props) {
           <BlockContent blocks={props._rawExcerpt} />
         </div>
       )} */}
-    </Link>
+    </ArticleLink>
   );
 }
 
