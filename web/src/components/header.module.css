@@ -105,7 +105,7 @@
     display: block;
     flex: 1;
     display: flex;
-    background: var(--color-orange);
+    background: var(--color-orange-opacity);
     align-items: center;
     justify-content: flex-end;
 

@@ -12,11 +12,11 @@ const ArticleLink = styled(Link)`
 display: block;
   color: inherit;
   text-decoration: none;
-  background-color: var(--color-light-blue);
+  /* background-color: var(--color-light-blue); */
   margin-bottom: 0.5rem;
   padding: 0.25rem;
   width: fit-content;
-  color: var(--color-white);
+  /* color: var(--color-white); */
   &:hover {
     /* background-color: var(--color-yellow); */
     text-decoration: underline;
